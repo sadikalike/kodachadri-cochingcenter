@@ -46,9 +46,10 @@ export default function RootLayout({
       <body className={`${poppins.variable} ${kannadaFont.variable} font-sans antialiased bg-gray-50 flex flex-col min-h-screen`}>
         <Navbar />
         
+        {/* Updated Announcement Bar - No Specific Date */}
         <div className="bg-[var(--primary-red)] text-white text-sm py-2 overflow-hidden whitespace-nowrap">
           <div className="animate-marquee inline-block font-medium">
-            🎉 Admissions Open for 2024-25 Batch! Demo classes starting from July 19th. Call: 7411406791 🎉
+            🎉 Admissions Open for the Next Batch! For more details, contact us at: 7411406791 🎉
           </div>
         </div>
 
