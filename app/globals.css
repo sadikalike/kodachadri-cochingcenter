@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  --primary-blue: #0a1f44;
+  --primary-red: #d32f2f;
+  --primary-yellow: #fbc02d;
+}
+
+body {
+  background-color: #f8fafc;
+  color: #333;
+  /* ಕನ್ನಡ ಫಾಂಟ್ ಮತ್ತು ಇಂಗ್ಲಿಷ್ ಫಾಂಟ್ ಎರಡನ್ನೂ ಸೇರಿಸಿ */
+  font-family: var(--font-kannada), var(--font-poppins), sans-serif;
+}
+
+/* Custom utility for the marquee effect */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  animation: marquee 15s linear infinite;
+}
