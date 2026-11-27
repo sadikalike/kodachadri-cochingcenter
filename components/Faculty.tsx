@@ -5,11 +5,12 @@ import { facultyData } from '@/data/faculty';
 // ಕಾರ್ಡ್ ಕಾಂಪೋನೆಂಟ್
 const FacultyCard = ({ member }: { member: any }) => {
   return (
-    <div className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group">
-      {/* Image Section */}
-      <div className="relative w-full h-64 bg-gray-200 overflow-hidden flex items-center justify-center">
+    <div className="bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 group flex flex-col h-full">
+      
+      {/* Image Section - Mobile ನಲ್ಲಿ ಎತ್ತರ ಹೆಚ್ಚಿಸಲಾಗಿದೆ (h-80) */}
+      <div className="relative w-full h-80 md:h-72 bg-gray-200 overflow-hidden flex items-center justify-center">
         {/* Fallback: ಫೋಟೋ ಇಲ್ಲದಿದ್ದರೆ ಕಾಣಿಸುವ ಅಕ್ಷರ */}
-        <span className="absolute text-gray-400 font-bold text-5xl z-0">
+        <span className="absolute text-gray-400 font-bold text-6xl z-0">
           {member.name.charAt(0)}
         </span>
 
@@ -23,21 +24,25 @@ const FacultyCard = ({ member }: { member: any }) => {
         />
         
         {/* Gradient Overlay at bottom of image */}
-        <div className="absolute bottom-0 left-0 w-full h-16 bg-gradient-to-t from-black/60 to-transparent z-20"></div>
+        <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-t from-black/70 to-transparent z-20"></div>
       </div>
 
       {/* Content Section */}
-      <div className="p-5 text-center relative z-30 -mt-6">
-        <div className="bg-white rounded-xl shadow-md p-4">
+      <div className="p-5 text-center relative z-30 -mt-8 flex-grow">
+        <div className="bg-white rounded-xl shadow-md p-4 h-full flex flex-col justify-center">
           <h3 className="text-lg font-bold text-[var(--primary-blue)] mb-1">{member.name}</h3>
+          
           <div className="flex items-center justify-center gap-1 text-gray-600 text-sm mb-2">
             <MapPin size={14} className="text-[var(--primary-red)]" />
             <span>{member.location}</span>
           </div>
+          
           {member.subject && (
-            <span className="inline-block bg-[var(--primary-yellow)]/20 text-yellow-700 text-xs font-semibold px-2 py-1 rounded-md mt-1">
-              {member.subject}
-            </span>
+            <div className="mt-1">
+              <span className="inline-block bg-[var(--primary-yellow)]/20 text-yellow-700 text-xs font-semibold px-2 py-1 rounded-md">
+                {member.subject}
+              </span>
+            </div>
           )}
         </div>
       </div>
