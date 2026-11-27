@@ -5,14 +5,15 @@ export const facultyData = {
     { name: "Venugopal C B", location: "Bangalore", image: "/Venugopal.png" },
     { name: "Lakshmiprasad Nayak", location: "Bangalore", image: "/Lakshmiprasad.png" },
     { name: "Dr. Basava Kiran", location: "Bangalore", image: "/Basava.png" },
+    { name: "Abhishek", location: "Chikmagalur", image: "/Abhishek.png" }, // ಹೊಸದಾಗಿ ಸೇರಿಸಲಾಗಿದೆ
   ],
   maths: [
-    { name: "Ganesh Ananth Bhatt", location: "Bangalore", image: "/Ananthh.png" },
+    { name: "Ganesh Ananth Bhatt", location: "Bangalore", image: "/Ananth.png" },
     { name: "Adarsh Hegde", location: "Mangalore", image: "/Adarsh.png" },
     { name: "Srikanth Dharwad", location: "Dharwad", image: "/Srikanth.png" },
     { name: "Dr. Krishna", location: "Bangalore", image: "/Krishna.png" },
   ],
   social: [
-    { name: "Santhosh Gowda", location: "Bangalore", subject: "Social & English Grammar", image: "/Santhoshh.png" },
+    { name: "Santhosh Gowda", location: "Bangalore", subject: "Social & English Grammar", image: "/Santhosh.png" },
   ]
 };
