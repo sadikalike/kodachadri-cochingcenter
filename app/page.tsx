@@ -1,7 +1,8 @@
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Courses from "@/components/Courses";
-import Feedback from "@/components/Feedback";
+import Faculty from "@/components/Faculty"; // ಹೊಸ ಫ್ಯಾಕಲ್ಟಿ ಕಾಂಪೋನೆಂಟ್
+import FeedbackPreview from "@/components/FeedbackPreview";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -10,7 +11,8 @@ export default function Home() {
       <Hero />
       <About />
       <Courses />
-      <Feedback />
+      <Faculty /> {/* ಇಲ್ಲಿ ಫ್ಯಾಕಲ್ಟಿ ಸೆಕ್ಷನ್ ಸೇರಿಸಲಾಗಿದೆ */}
+      <FeedbackPreview />
       <Contact />
     </main>
   );
