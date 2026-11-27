@@ -7,7 +7,7 @@ export const facultyData = {
     { name: "Dr. Basava Kiran", location: "Bangalore", image: "/Basava.png" },
   ],
   maths: [
-    { name: "Ganesh Ananth Bhatt", location: "Bangalore", image: "/Ananth.png" },
+    { name: "Ganesh Ananth Bhatt", location: "Bangalore", image: "/Ananthh.png" },
     { name: "Adarsh Hegde", location: "Mangalore", image: "/Adarsh.png" },
     { name: "Srikanth Dharwad", location: "Dharwad", image: "/Srikanth.png" },
     { name: "Dr. Krishna", location: "Bangalore", image: "/Krishna.png" },
